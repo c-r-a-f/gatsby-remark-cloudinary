@@ -1,5 +1,5 @@
 {
-  "name": "@c-r-a-f/gatsby-remark-cloudinary",
+  "name": "gatsby-remark-cloudinary-test",
   "version": "0.0.1",
   "description": "Convert media to img tag with cloudinary urls.",
   "keywords": [],

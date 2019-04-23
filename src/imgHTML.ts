@@ -7,12 +7,12 @@ export default (
     props: FastImageImageBestProps | FastImageVideoBestProps,
 ): string => {
     let out = ''
-    out += '<fast-image'
+    out += '<img'
     for (let key in props) {
         if (props.hasOwnProperty(key)) {
             out += ` ${key.toLowerCase()}="${(props as any)[key]}"`
         }
     }
-    out += '></fast-image>'
+    out += '/>'
     return out
 }

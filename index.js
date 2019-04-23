@@ -209,19 +209,27 @@ function () {
         switch (_context4.prev = _context4.next) {
           case 0:
             files = _ref8.files, markdownNode = _ref8.markdownNode, markdownAST = _ref8.markdownAST, getNode = _ref8.getNode, cache = _ref8.cache;
-            throw new Error(promises);
+            // This will only work for markdown syntax image tags
+            markdownImageNodes = select(markdownAST, "image");
 
-          case 5:
+            if (!(markdownImageNodes.length === 0)) {
+              _context4.next = 4;
+              break;
+            }
+
+            return _context4.abrupt("return");
+
+          case 4:
             parentNode = getNode(markdownNode.parent);
 
             if (!(!parentNode || !parentNode.dir)) {
-              _context4.next = 8;
+              _context4.next = 7;
               break;
             }
 
             return _context4.abrupt("return", null);
 
-          case 8:
+          case 7:
             promises = markdownImageNodes.map(function (node) {
               return new Promise(function (resolve, reject) {
                 cachedHtmlForNode({
@@ -247,7 +255,7 @@ function () {
               });
             }));
 
-          case 10:
+          case 9:
           case "end":
             return _context4.stop();
         }
