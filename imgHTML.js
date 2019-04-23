@@ -11,7 +11,9 @@ var _default = function _default(props) {
 
   for (var key in props) {
     if (props.hasOwnProperty(key)) {
-      out += " ".concat(key.toLowerCase().replace('img', ''), "=\"").concat(props[key], "\"");
+      if (key === 'imgsrc') {
+        out += " ".concat(key.toLowerCase().replace('img', ''), "=\"").concat(props[key], "\"");
+      }
     }
   }
 
