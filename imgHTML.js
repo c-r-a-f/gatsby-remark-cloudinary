@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _default = function _default(props) {
   var out = '';
-  out += '<fast-image';
+  out += '<img';
 
   for (var key in props) {
     if (props.hasOwnProperty(key)) {
@@ -15,7 +15,7 @@ var _default = function _default(props) {
     }
   }
 
-  out += '></fast-image>';
+  out += '/>';
   return out;
 };
 
