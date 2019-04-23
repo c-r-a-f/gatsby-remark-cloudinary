@@ -1,0 +1,43 @@
+{
+  "name": "@c-r-a-f/gatsby-remark-cloudinary",
+  "version": "0.0.1",
+  "description": "Convert media to img tag with cloudinary urls.",
+  "keywords": [],
+  "license": "MIT",
+  "author": "N <craf.post@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "tslint -p . -t codeFrame 'src/**/*.{js,jsx,ts,tsx}'",
+    "build": "babel --extensions '.ts' src --out-dir .",
+    "test": "exit 0",
+    "format": "prettier --write 'src/**/*.ts' '*.js'",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "dependencies": {
+    "@dylanvann/gatsby-cloudinary": "^0.0.8",
+    "lodash": "^4.17.4",
+    "md5-file": "^4.0.0",
+    "react-fast-image": "^0.0.21",
+    "unist-util-select": "^1.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.4.3",
+    "@types/react": "^16.4.7",
+    "cross-env": "^5.0.5",
+    "prettier": "^1.14.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^3.0.1"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  }
+}
