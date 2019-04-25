@@ -1,15 +1,15 @@
-# @dylanvann/gatsby-remark-cloudinary
+# gatsby-remark-cloudinary-test
 
 Proccesses images in Gatsby's remark using Cloudinary.
 
-Creates `<fast-image>` tags from images in markdown.
+Creates `<img>` tags from images in markdown.
 
 ## Install
 
 ```bash
-npm install @dylanvann/gatsby-remark-cloudinary
+npm install gatsby-remark-cloudinary-test
 # or
-yarn add @dylanvann/gatsby-remark-cloudinary
+yarn add gatsby-remark-cloudinary-test
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add @dylanvann/gatsby-remark-cloudinary
 module.exports = {
     plugins: [
         {
-            resolve: '@dylanvann/gatsby-transformer-cloudinary',
+            resolve: 'gatsby-transformer-cloudinary-test',
             options: {
                 cloudName: '...',
                 apiKey: '...',
