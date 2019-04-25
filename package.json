@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-cloudinary-test",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Convert media to img tag with cloudinary urls.",
   "keywords": [],
   "license": "MIT",

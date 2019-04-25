@@ -22,4 +22,3 @@ var _default = function _default(props) {
 };
 
 exports["default"] = _default;
-
