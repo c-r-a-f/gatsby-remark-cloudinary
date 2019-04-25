@@ -11,9 +11,7 @@ export default (
   for (let key in props) {
     if (props.hasOwnProperty(key)) {
       const keyString = key.toLowerCase()
-      if( keyString === 'imgsrc' || keyString === 'imgsrcset') {
         out += ` ${keyString.replace('img','')}="${(props as any)[key]}"`
-      }
     }
   }
   out += ' size="100vw" />'

@@ -19,7 +19,7 @@ var _default = function _default(props) {
     }
   }
 
-  out += '/>';
+  out += ' size="100vw" />';
   return out;
 };
 
