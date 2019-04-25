@@ -10,10 +10,9 @@ var _default = function _default(props) {
   out += '<img';
 
   for (var key in props) {
-    const keyString = key.toLowerCase()
     if (props.hasOwnProperty(key)) {
-      if (keyString === 'imgsrc' || keyString === 'imgsrcset') {
-        out += " ".concat(keyString.replace('img', ''), "=\"").concat(props[key], "\"");
+      if (key.toLowerCase() === 'imgsrc') {
+        out += " ".concat(key.toLowerCase().replace('img', ''), "=\"").concat(props[key], "\"");
       }
     }
   }
@@ -23,3 +22,4 @@ var _default = function _default(props) {
 };
 
 exports["default"] = _default;
+

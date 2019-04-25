@@ -16,16 +16,24 @@ yarn add gatsby-remark-cloudinary-test
 
 ```js
 // gatsby-config.js
+
 module.exports = {
-    plugins: [
-        {
-            resolve: 'gatsby-transformer-cloudinary-test',
+  plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-cloudinary-test',
             options: {
-                cloudName: '...',
-                apiKey: '...',
-                apiSecret: '...',
+              cloudName: '...',
+              apiKey: '...',
+              apiSecret: '...',
             },
-        },
-    ],
+          },
+        ],
+      }
+    }
+  ]
 }
 ```
