@@ -16,6 +16,6 @@ export default (
       }
     }
   }
-  out += '/>'
+  out += ' size="100vw" />'
   return out
 }
